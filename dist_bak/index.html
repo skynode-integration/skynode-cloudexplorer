@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cloud Explorer</title>
+    <link href='./demo-page.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="./demo-page.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+    </header>
+    <section class="button-bar">
+      <ul>
+        <li id="ce-open-file">Select file</li>
+        <li id="ce-open-files">Select files</li>
+        <li id="ce-open-folder">Select a folder</li>
+        <li id="ce-save-file">Save a copy</li>
+        <li id="ce-saveas-file">Save as</li>
+      </ul>
+      <select id="ce-extensions">
+        <option value="">show all files</option>
+        <option value=".html">html</option>
+        <option value=".jpg,.png,.gif,.jpeg">images (png, gif, jpg)</option>
+        <option value=".jpg,.png,.gif,.jpeg,.mp3,.mp4,.ogg">media (image, sound, video)</option>
+      </select>
+    </section>
+    <section id="selection"></section>
+    <iframe id="ceIFrame" class="container" src="./cloud-explorer.html" />
+    <footer></footer>
+  </body>
+</html>
